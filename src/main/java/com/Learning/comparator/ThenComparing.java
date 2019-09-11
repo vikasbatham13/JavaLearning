@@ -1,4 +1,4 @@
-package com.Learning.comparator.thenComparing;
+package com.Learning.comparator;
 
 import java.util.Arrays;
 import java.util.Collections;
