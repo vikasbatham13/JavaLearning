@@ -175,7 +175,14 @@ public class intermediate {
 
         List<Integer> integerList = listOfLists.stream().flatMap(i -> i.stream()).collect(Collectors.toList());
 
+        String[][] dataArray = new String[][]{{"a", "b"}, {"c", "d"}, {"e", "f"}, {"g", "h"}};
+
+        List<String> listOfAllChars = Arrays.stream(dataArray)
+            .flatMap(x -> Arrays.stream(x))
+            .collect(Collectors.toList());
+
         assertEquals(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9), integerList);
+        assertEquals(Arrays.asList("a","b","c","d","e","f","g","h"), listOfAllChars);
 
     }
 }
