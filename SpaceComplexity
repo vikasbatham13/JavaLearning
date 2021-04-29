@@ -1,0 +1,16 @@
+1. Space Complexity of an algorithm is total space taken by the algorithm with respect to the input size
+
+int add (int n){
+    if (n <= 0){
+        return 0;
+    }
+    return n + add (n-1);
+}
+
+1.  add(4)
+2.    -> add(3)
+3.      -> add(2)
+4.        -> add(1)
+5.          -> add(0)
+Each of these calls is added to call stack and takes up actual memory.
+So it take O(n) space.
