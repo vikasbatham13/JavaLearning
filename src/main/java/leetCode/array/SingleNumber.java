@@ -1,9 +1,8 @@
-package com.Learning.array;
+package leetCode.array;
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import java.util.Optional;
 
 public class SingleNumber {
 

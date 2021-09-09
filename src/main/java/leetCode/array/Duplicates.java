@@ -1,6 +1,5 @@
-package com.Learning.array;
+package leetCode.array;
 
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
