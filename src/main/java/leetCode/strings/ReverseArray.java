@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ReverseArray {
 
-    public void reverseString(char[] s) {
+ /*   public void reverseString(char[] s) {
         int start=0;
         int end = s.length-1;
         while(start<end)
@@ -16,7 +16,7 @@ public class ReverseArray {
             end--;
 
         }
-    }
+    }*/
 
     public static void main(String[] args) {
         char[] arr = {'r', 's', 't', 'u', 'v'};
@@ -25,4 +25,20 @@ public class ReverseArray {
         reverseArray.reverseString(arr);
         System.out.println(Arrays.toString(arr));
     }
+
+    public void reverseString(char[] s) {
+        int start = 0;
+        int end = s.length-1;
+
+        while (start<end){
+            char tmp = s[start];
+            s [start]= s[end];
+            s[end] = tmp;
+            start++;
+            end--;
+        }
+    }
+
 }
+
+

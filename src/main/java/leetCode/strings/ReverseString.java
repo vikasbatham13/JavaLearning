@@ -16,6 +16,11 @@ public class ReverseString {
     public static void main(String[] args) {
         String reverseString = "VikaS BathaM";
 
+       // StringBuilder builder = new StringBuilder();
+       // builder.append(reverseString);
+       // builder.reverse();
+       // System.out.println(builder);
+
         StringBuilder builder = new StringBuilder();
         builder.append(reverseString);
         builder.reverse();
